@@ -130,6 +130,28 @@ def possible_powers(a: int):
     return possible_pwrs
 
 
+def avg(numbers: list):
+    number_sum = 0
+    for x in numbers:
+        number_sum += x
+    return number_sum / len(numbers)
+
+
+def middle_number(a: int, b: int):
+    if a < b:
+        if (b - a) % 2 == 0:
+            return 0
+        else:
+            return (b - a) / 2 + a
+    elif a > b:
+        if (a - b) % 2 == 0:
+            return 0
+        else:
+            return (a - b) / 2 + b
+    else:
+        return 0
+
+
 def generate_password(length: int):
     characters, password = list(string.ascii_letters + '0123456789'), ''
     for i in range(length):
