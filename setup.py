@@ -8,5 +8,5 @@ setup(
     license='',
     author='scaldings',
     author_email='',
-    description=''
+    description='A short and simple library including some helpful math calculations.'
 )
